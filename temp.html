@@ -1,0 +1,224 @@
+<section class="main_full banner_section_top">
+    <div class="container-fluid">
+      <div class="row">
+         <div class="full">
+              <div class="slider_banner">
+                <!-- <img class="img-responsive" src="images/slider_img.png" alt="#" /> -->
+                  <div class="slide_cont">
+                    <div class="slider_cont_inner" >
+                      <h3  >Welcome To Job Portal</h3>
+                    <p >As we know today unemployment is a major problem in our country. Today most of the people are unemployed. Thus, this problem can be solved using Online Job Portal application. By using this application the people who are unemployed can get work. Here the people can get non-technical job i.e. if any company wants to give out any non-technical jobs such as Call centre, Account Manager, Product Marketing Manager then they can use this system.</p>
+                    
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="layout_padding section about_dottat">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12 text_align_center">
+            
+          </div>
+          <div class="col-md-12">
+             <div class="about_img margin_top_30  text_align_center">
+             
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- end about section -->
+
+ <!-- section -->
+ <section class="layout_padding section">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12 text_align_center">
+             <div class="full heading_s1">
+                <h2>Our goal</h2>
+             </div>
+             <div class="full">
+                <p class="large">As we know today unemployment is a major problem in our country, today most of the people are unemployed though they are capable.
+Thus this problem can be solved using this application.
+By using this application the people can get non-technical jobs</p>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+
+         <div class="col-md-4 text_align_center">
+            <div class="cours">
+           
+            </div>
+            <h3>Give Jobs</h3>
+            <p> If any company wants to give out any non-technical jobs such as Call centre, Account Manager, Product Marketing Manager then they can use this system.</p>
+         </div>  
+
+         <div class="col-md-4 text_align_center">
+            <div class="cours">
+              
+            </div>
+            <h3>Apply Jobs</h3>
+            <p>Seekers can apply for jobs while aslo providing a cloud link of the pdf of their Resumes.</p>
+         </div> 
+
+         <div class="col-md-4 text_align_center">
+            <div class="cours">
+             
+            </div>
+            <h3>Easy Administration</h3>
+            <p>Administratos can easily access the data and modify the data as well.</p>
+         </div> 
+
+       </div>
+      
+    </div>
+ </section>
+
+
+
+ <tr>
+   <td>  
+     <label> <b>Name</b> </label>   
+   </td>
+   <td>
+   <input type="text" name="provider_name" placeholder= "Name" size="15" required value="<?php if(isset($_SESSION['provider_name'])){echo $_SESSION['provider_name']; }?>" minlength="2"  pattern="[a-z A-Z]+" />   
+    </td>
+    <tr>
+    <td>
+    
+    <label><b>Company Name</b> </label>   
+   </td>
+   <td>
+   <input type="text" name="company_name" placeholder= "Name" size="15" required value="<?php if(isset( $_SESSION['provider_name'])){ echo $_SESSION['company_name'];} ?>" minlength="2"  pattern="[a-z A-Z]+" />   
+     </td>
+   </tr>  
+   
+      <tr>	
+         <td>  
+            
+               <b>Company Phone :  </b>
+            
+            </td>
+         <td>
+               <input type="tel" name="phone" placeholder="phone no." size="10" required  value="<?php if(isset( $_SESSION['provider_name'])){ echo $_SESSION['phone'];} ?>" minlength="10" maxlength="10" pattern="[6789][0-9]{9}">(Indian Phone Number)  
+         </td>
+      </tr>
+      <tr>
+         <td>
+    
+            <b>Provider Current Address : </b>
+         </td>
+         <td>
+         <textarea name="company_address" col="80" rows="5" required><?php if(isset( $_SESSION['provider_name'])){echo $_SESSION['company_address'];} ?></textarea>
+         </td>
+      </tr>
+      <tr>
+      
+            <td><label for="email" ><b>Email</b></label> </td> 
+            <td><input type="email" placeholder="Enter Email" name="email" required value="<?php if(isset( $_SESSION['provider_name'])){echo $_SESSION['email']; }?>"> <td>
+      </tr>
+   <tr>	
+     <td>
+       
+      <label for="psw"><b>Password</b></label>  
+       </td>
+      <td>
+      <input type="password" placeholder="Enter Password" name="psw" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">Atleast 8 char, 1 UpperCase, 1 LowerCase, 1 SpecialSymbol  
+      </td>
+   </tr>
+   
+       <tr>
+       <td><button type="submit" class="registerbtn"  >Register</button> </td>
+         </tr>
+
+
+
+
+
+         
+
+         <tr>
+         <td>
+               <label><b> Name <b></label>  
+         </td>
+         <td>
+         
+            <input type="text" name="seeker_name" placeholder= "Name" size="15" required value="<?php if(isset( $_SESSION['seeker_name'])){echo $_SESSION['seeker_name']; }?>" minlength="2"  pattern="[a-z A-Z]+"/>   
+         </td>
+         </tr>
+
+
+
+
+         <td>
+            <label> 
+            <b>  
+            Gender  </b> 
+            </label></td>
+            <td>  
+            <input type="radio" value="Male" name="gender" checked > Male   
+            <input type="radio" value="Female" name="gender"> Female   
+            </td>
+              
+            </tr>
+            <tr>
+            <td>  
+            <label>  
+            <b> 
+            Phone  </b> 
+            </label>
+            </td>
+            <td>  
+             
+            <input type="tel" name="phone" placeholder="phone no." size="10"/ required size="10" required  value="<?php if(isset( $_SESSION['seeker_phone'])){ echo $_SESSION['seeker_phone'];} ?>" minlength="10" maxlength="10" pattern="[6789][0-9]{9}">(Indian Phone Number)   
+            </td>
+            </tr>
+            <tr>
+            <td>
+            
+            <label>   <b>
+            Aadhar no.  </b> 
+            </label></td>
+            <td>  
+             
+            <input type="tel" name="Aadhar" placeholder="Aadhar no." size="10" required size="10" required  value="<?php if(isset( $_SESSION['seeker_aadhar'])){ echo $_SESSION['seeker_aadhar'];} ?>" minlength="12" maxlength="12" pattern="[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}">   
+             </td>
+             </tr>
+             <tr>
+             <td>
+             <b>
+            Current Address  </b></td>
+            <td>  
+            <textarea name="seeker_address" cols="75" rows="5"  required> 
+            <?php if(isset($_SESSION['seeker_address'])){echo $_SESSION['seeker_address'];} ?> 
+            </textarea>
+            </td>
+            </tr>
+            <tr>
+            <td>  
+             <label for="email"><b>Email</b></label> </td>
+            <td> 
+             <input type="email" placeholder="Enter Email" name="email" required value="<?php if(isset( $_SESSION['seeker_email'])){echo $_SESSION['seeker_email']; }?>">  
+              </td>
+              </tr>
+              <tr>
+              <td>
+              
+                <label for="psw"><b>Password</b></label>  
+            </td>
+            
+            <td>   
+               <input type="password" placeholder="Enter Password" name="psw" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">Atleast 8 char, 1 UpperCase, 1 LowerCase, 1 SpecialSymbol
+              </td>
+              </tr>
+             
+               <tr>
+               <td>
+               <button type="submit" class="registerbtn">Register</button>    
+               </td>
